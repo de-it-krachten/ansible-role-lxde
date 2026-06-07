@@ -1,0 +1,31 @@
+---
+
+- name: Install LXDE on RedHat family
+  when: ansible_os_family == 'RedHat'
+  block:
+
+    - name: Install EPEL (RedHat family)
+      ansible.builtin.dnf:
+        name: epel-release
+        state: present
+
+    - name: Install LXDE (RedHat family)
+      ansible.builtin.dnf:
+        name: '@lxde-desktop'
+        state: present
+
+- name: Install LXDE on Debian family
+  when: ansible_os_family == 'Debian'
+  block:
+
+    - name: Install LXDE (Debian family)
+      ansible.builtin.apt:
+        name: lxde
+        state: present
+        force_apt_get: yes
+
+- name: Install LightDM display manager
+  ansible.builtin.apt:
+    name: lightdm
+    state: present
+  notify: Restart LightDM
