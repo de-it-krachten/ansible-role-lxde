@@ -1,0 +1,63 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-lxde
+  role_short: lxde
+  role_description: |
+    Installs the LXDE desktop on a variety of Linux distributions
+  collections: []
+
+# Supported platforms
+platforms:
+  rhel8:
+    supported: false
+    ci: false
+  rhel9:
+    supported: false
+    ci: false
+  rhel10:
+    supported: false
+    ci: false
+  rockylinux8:
+    supported: false
+    ci: false
+  rockylinux9:
+    supported: false
+    ci: false
+  rockylinux10:
+    supported: false
+    ci: false
+  oraclelinux8:
+    supported: false
+    ci: false
+  oraclelinux9:
+    supported: false
+    ci: false
+  oraclelinux10:
+    supported: false
+    ci: false
+  almalinux8:
+    supported: false
+    ci: false
+  almalinux9:
+    supported: false
+    ci: false
+  almalinux10:
+    supported: false
+    ci: false
+  ubuntu2004:
+    supported: true
+    ci: true
+  fedora43:
+    supported: false
+    ci: false
+  fedora44:
+    supported: false
+    ci: false
+
+# Molecule
+molecule:
+  requirements:
+    roles_extra: []
+
