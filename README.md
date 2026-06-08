@@ -3,7 +3,7 @@
 
 # ansible-role-lxde
 
-<basic role description>
+Installs the LXDE desktop on a variety of Linux distributions
 
 
 
