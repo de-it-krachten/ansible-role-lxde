@@ -3,7 +3,7 @@
 
 # ansible-role-lxde
 
-<basic role description>
+Installs the LXDE desktop on a variety of Linux distributions
 
 
 
@@ -34,6 +34,7 @@ Supported platforms
 - Debian 11 (Bullseye)
 - Debian 12 (Bookworm)
 - Debian 13 (Trixie)
+- Ubuntu 20.04 LTS
 - Ubuntu 22.04 LTS
 - Ubuntu 24.04 LTS
 - Ubuntu 26.04 LTS
