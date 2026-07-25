@@ -1,0 +1,21 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-lxde
+  role_short: lxde
+  role_description: |
+    Installs the LXDE desktop on a variety of Linux distributions
+  collections: []
+
+# Supported platforms
+platforms:
+  ubuntu2004:
+    supported: true
+    ci: true
+
+# Molecule
+molecule:
+  requirements:
+    roles_extra: []
+

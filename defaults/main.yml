@@ -1,0 +1,7 @@
+---
+
+lxde_user: vagrant
+lxde_group: vagrant
+lxde_monitor: Virtual1
+lxde_monitor_mode: '1920x1080'
+lxde_monitor_rate: '60.00'
