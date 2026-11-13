@@ -1,0 +1,16 @@
+---
+
+- name: Create LightDM configuration file
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: >-
+      {%- if item == 'lightdm.conf' -%}
+      /etc/lightdm/lightdm.conf
+      {%- else -%}
+      /etc/lightdm/lightdm.conf.d/{{ item }}
+      {%- endif -%}
+    mode: "0644"
+  loop:
+    - lightdm.conf
+    - 60-resolution.conf
+  notify: Restart LightDM
